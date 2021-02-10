@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#272640"
+    tools:context=".AddFriendActivity">
+
+    <FrameLayout android:id="@+id/addftbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <include layout="@layout/addfriend_toolbar"/>
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/addfsearch"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/addftbar"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="58dp"
+        android:background="@drawable/roundedittext"
+        android:drawableEnd="@drawable/searchicon"
+        android:drawableRight="@drawable/searchicon"
+        android:hint="Search "
+        android:padding="5dp"
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/addfrecyclerview"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addfsearch"
+        android:layout_marginBottom="30dp"/>
+</RelativeLayout>

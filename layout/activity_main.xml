@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/homeactivity"
+    tools:context=".MainActivity">
+
+
+    <FrameLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/homeact">
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <FrameLayout
+                android:id="@+id/actionBarContainer"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+                <include layout="@layout/chat_tool_bar"/>
+                <include layout="@layout/task_tool_bar"/>
+                <include layout="@layout/contacts_tool_bar"/>
+                <include layout="@layout/profile_tool_bar"/>
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/fragment_container"
+                android:layout_below="@id/actionBarContainer"
+                android:layout_above="@id/bottomnavbar"/>
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:menu="@menu/bottom_nav_menu"
+                android:id="@+id/bottomnavbar"
+                android:layout_alignParentBottom="true"
+                android:background="#D4A017"
+
+
+                />
+        </RelativeLayout>
+    </FrameLayout>
+
+
+</RelativeLayout>

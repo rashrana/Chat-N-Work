@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#D4A017"
+    tools:context=".RegisterActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:padding="15dp"
+        android:background="@drawable/roundedittext"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Login"
+            android:textColor="#D4A017"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/logemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/roundedittext"
+            android:drawableLeft="@drawable/emailicon"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/poppins"
+            android:hint="Enter your Email"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="#D4A017"
+            android:textSize="23sp" />
+
+        <EditText
+            android:id="@+id/logpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/roundedittext"
+            android:drawableLeft="@drawable/passwordicon"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/poppins"
+            android:hint="Enter your Password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="#D4A017"
+            android:textSize="23sp" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/logsignin"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/roundbutton"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Login"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/forgotpwd"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/roundbutton"
+            android:backgroundTint="#80FFFFFF"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Forgot Password"
+            android:textColor="@color/teal_700" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="Don't have Account?" />
+
+            <TextView
+                android:id="@+id/logsignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="Sign Up"
+                android:textColor="#000080" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/logprogresscircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"/>
+
+
+
+</RelativeLayout>

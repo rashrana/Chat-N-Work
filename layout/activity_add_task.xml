@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#272640"
+    tools:context=".AddTaskActivity">
+
+    <FrameLayout
+        android:id="@+id/addtbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <include layout="@layout/addtask_toolbar" />
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/newtaskt"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/addtbar"
+        android:gravity="top"
+        android:background="#80FFFFFF"
+        android:hint="Enter task here"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/newtdue"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/newtaskt"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:textColor="#80FFFFFF"
+        android:drawableStart="@drawable/calendaricon"
+        android:drawableLeft="@drawable/calendaricon"
+        android:hint="December 9"
+        android:textColorHint="#80FFFFFF"
+        android:textSize="18sp"
+        android:drawablePadding="10dp"
+        tools:ignore="UseCompatTextViewDrawableXml"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:id="@+id/newtassignee"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/newtdue"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/groupicon"
+        android:drawableLeft="@drawable/groupicon"
+        android:text="Select Assignee"
+        android:textColor="#80FFFFFF"
+        android:textSize="18sp"
+        android:drawablePadding="10dp"
+        tools:ignore="UseCompatTextViewDrawableXml"
+        android:layout_marginStart="10dp" />
+
+    <Button
+        android:id="@+id/newtasksave"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="SAVE"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        app:backgroundTint="#366060"
+        app:background="@drawable/rectbackground"/>
+</RelativeLayout>
